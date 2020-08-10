@@ -6,7 +6,7 @@ import time
 
 def get_login_info():
 
-    f = open('login_info', 'r')
+    f = open('login_info.txt', 'r')
     info = f.readline()
     info = info.rstrip()
     infos = info.split(',')

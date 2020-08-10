@@ -1,11 +1,13 @@
 This document is written in Dec, 29, 2019
+
 python 3.7.3
+chrome webdriver 84.0.4147.30 mac64
 
 use included virtual environment
 (on unix or mac: source env/bin/activate)
 or set your own environment
 (should install selenium: pip install selenium)
 
-must INCLUDE /path/to/Suagang_Macro/chrome_webdriver in $PATH
+INCLUDE /path/to/Suagang_Macro/chrome_webdriver in $PATH
 (check your chrome version and download appropriate version: https://chromedriver.storage.googleapis.com/index.html)
 (file included is for 79.0.3945.36 mac64)
