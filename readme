@@ -8,6 +8,8 @@ use included virtual environment
 or set your own environment
 (should install selenium: pip install selenium)
 
-INCLUDE /path/to/Suagang_Macro/chrome_webdriver in $PATH
+INCLUDE /path/to/knuSuagangMacro/chrome_webdriver in $PATH
 (check your chrome version and download appropriate version: https://chromedriver.storage.googleapis.com/index.html)
-(file included is for 79.0.3945.36 mac64)
+
+CREATE "/path/to/knuSugangMacro/login_info.txt"
+학번,통합정보시스템 아이디,비밀번호를 순서대로 띄워쓰기없이 ','로 구분해서 첫줄에 입력해주세요

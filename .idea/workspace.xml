@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160d62a4-4a2a-4427-bd66-e846c3d32eb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome_webdriver/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/chrome_webdriver/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_info" beforeDir="false" afterPath="$PROJECT_DIR$/login_info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme" beforeDir="false" afterPath="$PROJECT_DIR$/readme" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +91,7 @@
       <workItem from="1581384356593" duration="8070000" />
       <workItem from="1581466789315" duration="1149000" />
       <workItem from="1597053319369" duration="720000" />
-      <workItem from="1597055061168" duration="258000" />
+      <workItem from="1597055061168" duration="567000" />
     </task>
     <servers />
   </component>
