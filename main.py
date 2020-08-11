@@ -59,5 +59,6 @@ while True:
             else:
                 print("lecture full")
 
-        driver.refresh()
         time.sleep(1)
+        driver.refresh()
+        driver.implicitly_wait(300)
