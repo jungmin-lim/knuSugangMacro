@@ -51,7 +51,7 @@ while True:
             if lect_quota.text != lect_req_cnt.text:
                 print(lect_quota.text)
                 print(lect_req_cnt.text)
-                # apply_button.click()
+                apply_button.click()
                 alert = driver.switch_to.alert()
                 print(alert.get_Text())
                 alert.accept()
@@ -60,4 +60,4 @@ while True:
                 print("lecture full")
 
         driver.refresh()
-        time.sleep(2)
+        time.sleep(1)
