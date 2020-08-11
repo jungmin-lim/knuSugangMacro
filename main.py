@@ -34,28 +34,33 @@ while True:
     passwd_box.send_keys(passwd)
     submit.click()
 
-    apply_button = driver.find_element_by_xpath("//*[@id=\"lectPackReqGrid_0\"]/td[11]")
-
-    apply_button.click()
-    alert = driver.switch_to.alert()
-    print(driver.switch_to.alert.get_Text())
-    alert.accept()
 
     # apply session
     while driver.current_url == "https://sugang.knu.ac.kr/Sugang/cour/lectReq/onlineLectReq/list.action":
 
-        lect_quota = driver.find_element_by_xpath("//*[@id=\"lectPackReqGrid_0\"]/td[8]")
-        lect_req_cnt = driver.find_element_by_xpath("//*[@id=\"lectPackReqGrid_0\"]/td[9]")
-        apply_button = driver.find_element_by_xpath("//*[@id=\"lectPackReqGrid_0\"]/td[11]")
+        lect_pack = driver.find_element_by_id("lectPackReqGrid")
+        lect_pack_0 = lect_pack.find_element_by_id("lectPackReqGrid_0")
+        lect_pack_1 = lect_pack.find_element_by_id("lectPackReqGrid_1")
+        lect_pack_2 = lect_pack.find_element_by_id("lectPackReqGrid_2")
+        lect_pack_list = [lect_pack_0, lect_pack_1, lect_pack_2]
 
-        if lect_quota.text != lect_req_cnt.text:
-            apply_button.click()
-            alert = driver.switch_to.alert()
-            print(alert.get_Text())
-            alert.accept()
+        for x in lect_pack_list:
+            lect_name = x.find_element_by_class_name("subj_nm")
+            lect_quota = x.find_element_by_class_name("lect_quota")
+            lect_req_cnt = x.find_element_by_class_name("lect_req_cnt")
+            apply_button = x.find_element_by_class_name("button")
+            print("%s %s/%s" %(lect_name.text, lect_quota.text, lect_req_cnt.text))
 
-        else:
-            print("lecture full")
+            if lect_quota.text != lect_req_cnt.text:
+                print(lect_quota.text)
+                print(lect_req_cnt.text)
+                # apply_button.click()
+                alert = driver.switch_to.alert()
+                print(alert.get_Text())
+                alert.accept()
+
+            else:
+                print("lecture full")
 
         driver.refresh()
         time.sleep(2)
