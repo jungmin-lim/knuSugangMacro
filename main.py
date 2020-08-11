@@ -16,7 +16,6 @@ def get_login_info():
 
 driver = Chrome()
 stu_nbr, usr_id, passwd = get_login_info()
-i = 1
 
 # open chrome window ("url")
 driver.get("http://sugang.knu.ac.kr")
@@ -34,10 +33,8 @@ while True:
     passwd_box.send_keys(passwd)
     submit.click()
 
-
     # apply session
     while driver.current_url == "https://sugang.knu.ac.kr/Sugang/cour/lectReq/onlineLectReq/list.action":
-
         lect_pack = driver.find_element_by_id("lectPackReqGrid")
         lect_pack_0 = lect_pack.find_element_by_id("lectPackReqGrid_0")
         lect_pack_1 = lect_pack.find_element_by_id("lectPackReqGrid_1")
