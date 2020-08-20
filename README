@@ -2,7 +2,7 @@ python 3.7.3
 chrome webdriver 84.0.4147.30 mac64
 
 use included virtual environment
-(on unix or mac: source env/bin/activate)
+(on mac: source env/bin/activate)
 or set your own environment
 (should install selenium: pip install selenium)
 
