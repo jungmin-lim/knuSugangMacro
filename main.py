@@ -5,6 +5,7 @@ from selenium.webdriver.common.alert import Alert
 
 import time
 
+'''
 from captcha_solver import CaptchaSolver
 import urllib.request
 import cv2
@@ -13,7 +14,7 @@ try:
 except ImportError:
     import Image
 import pytesseract
-
+'''
 
 def get_login_info():
 
