@@ -44,7 +44,8 @@ while True:
     usr_id_box.send_keys(usr_id)
     passwd_box.send_keys(passwd)
     submit.click()
-
+    time.sleep(1)
+    
     # apply session
     while driver.current_url == "https://sugang.knu.ac.kr/Sugang/cour/lectReq/onlineLectReq/list.action":
         # lecture search
